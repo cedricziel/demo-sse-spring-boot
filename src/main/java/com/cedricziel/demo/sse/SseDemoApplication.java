@@ -43,7 +43,7 @@ public class SseDemoApplication {
     @RequestMapping(path = "/chat", method = RequestMethod.POST)
     public Message sendMessage(@Valid Message message) {
 
-        log.info("Got message");
+        log.info("Got message" + message);
 
         emitters.forEach((SseEmitter emitter) -> {
             try {

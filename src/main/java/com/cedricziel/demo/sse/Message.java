@@ -21,4 +21,13 @@ public class Message {
         this.from = from;
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+
+        return "Message{" +
+                "from='" + from + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }
